@@ -18,23 +18,23 @@ function App() {
       });
   }
 
-  function getRandomColor() {
+  function getRandomColour() {
     const hue = Math.floor(Math.random() * 360);
     const saturation = Math.floor(Math.random() * 100);
     const lightness = Math.floor(Math.random() * 100);
     return `hsl(${hue}, ${saturation}%, ${lightness}%)`;
   }
 
-  newQuote();
+  // add tweetquote and tumblrquote functions to generate links for sharing quotes
 
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Quotidian</h1>
-        <h2>Quote machine</h2>
-        {getQuote}
-        {getAuthor}
-      </header>
+      <div className='quote box' >
+        <header className="App-header">
+          <h1>Quotidian</h1>
+          <h2>Quote machine</h2>
+        </header>
+      </div>
     </div>
   );
 }
